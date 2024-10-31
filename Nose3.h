@@ -135,8 +135,8 @@ class Nose
         const double m9_ch4 = -0.3803855584;
         const double b9_ch4 = 1.36664027361;
         //MQ214-CH4
-        const double m214_ch4 = -0.3884571398;
-        const double b214_ch4 = 3.4569185462;
+        const double m214_ch4 = -0.3692872167;
+        const double b214_ch4 = 1.477148867;
         const float rsr02 = 9.83;
         const float rsr03 = 60.0;
         const float rsr04 = 4.4;

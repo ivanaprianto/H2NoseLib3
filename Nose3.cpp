@@ -151,7 +151,7 @@ Nose::Nose(int pin[3], int gastype, bool comm) //simple mode
         _b = b214_ch4;
         _RSR0 = rsr0214;
         _gasType = "MQ214_CH4";
-        _RL = 50;
+        _RL = 1;
         break;
     case 15: 
         _b = _R01; 
@@ -271,6 +271,7 @@ float Nose::getVoltage()
     _readout3 = analogRead(_pin3);
     _volt3 = (_readout3 * (5.0/1023.0));
     _volt = (_volt1 + _volt2 + _volt3) / 3;
+    _readout = (_readout1 + _readout2 + _readout3) / 3;
     return _volt;
 }
 
